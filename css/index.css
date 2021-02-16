@@ -29,6 +29,7 @@ Body{
 #cardDisplay{
      display: flex;
      flex-flow: column;
+     margin-top: var(--spsc-5);
 }
 
 /* Card */
@@ -37,7 +38,7 @@ Body{
      width: 100%;
      padding-bottom: 56.25%;
      overflow: hidden;
-     margin-top: var(--spsc-3);
+     margin-bottom: var(--spsc-5);
 }
 
 .thumbnail{
