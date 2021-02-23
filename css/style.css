@@ -161,10 +161,12 @@ html {
 
 h1 {
     font-size: var(--fs-3);
+    font-weight: 400;
 }
 
 h2 {
     font-size: var(--fs-2);
+    font-weight: 400;
 }
 
 h3 {
@@ -214,6 +216,7 @@ a{
 em{
     color: var(--accent);
     font-style: normal;
+    font-weight: 400;
 }
 
 .amp a{
@@ -223,6 +226,11 @@ em{
 
 .amp a:hover{
     color: var(--text);
+}
+
+.secondary-text{
+    color: var(--sd-text);
+    font-weight: 400;
 }
 
 /* MOTION */
@@ -434,6 +442,15 @@ em{
 
 /* Universal Style */
 
+/* Bootstrap Override */
+p{
+    margin-bottom: 0;
+}
+
+.container-fluid{
+    padding-bottom: var(--spsc-3);
+}
+
 /* General layout */
 Body{
     display: grid;
@@ -557,4 +574,28 @@ Body{
 
 i:hover{
     color: var(--accent);
+}
+
+/* Content */
+#content p,h1,h2,h3{
+    padding: var(--spsc-3) 0 var(--sp-base) 0;
+}
+
+ul{
+    padding: 0 var(--spsc-5);
+    list-style-type: square;
+}
+
+ol{
+    padding: 0 var(--spsc-5);
+}
+
+li{
+    font-size: var(--fs-2);
+    font-weight: 200;
+    padding: var(--sp-base) 0;
+}
+
+.img-fluid{
+    padding: var(--spsc-3) 0;
 }
